@@ -1,0 +1,18 @@
+<html>
+<head>
+</head>
+
+<body>
+<Script language="JavaScript" type="text/JavaScript">
+    
+    function roundDecimalsAtPlace(Deci,Place)
+    {
+        var result  =Deci*Math.pow(10,Place);
+        Deci    =Math.round(result)/Math.pow(10,Place);
+        return Deci;
+    }
+    
+    alert(roundDecimalsAtPlace(3.141,2));
+</Script>
+</body>
+</html>

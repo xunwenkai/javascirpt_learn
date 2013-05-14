@@ -1,0 +1,18 @@
+<html>
+<head></head>
+<body>
+<Script language="JavaScript" type="text/JavaScript">
+var girlAge = new Array(12,13,"hahaha",20);
+var indexofAge;
+for(indexofAge in girlAge)
+{
+    if(isNaN(girlAge[indexofAge]))
+    {
+        document.write("Encountered an error");
+        break;
+    }
+    document.write("the age of the girl is " + girlAge[indexofAge] +"<br>");
+}
+</Script>
+</body>
+</html>

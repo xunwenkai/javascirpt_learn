@@ -1,0 +1,48 @@
+<html>
+<head>
+</head>
+
+<body>
+<Script language="JavaScript" type="text/JavaScript">
+
+    function get1stCharType(inputString)
+    {
+        if(inputString.charCodeAt(0)>="0".charCodeAt(0) && inputString.charCodeAt(0)<="9".charCodeAt(0))
+            return "N";
+        
+        else if(inputString.charCodeAt(0)>="A".charCodeAt(0) && inputString.charCodeAt(0)<="Z".charCodeAt(0))
+            return "U";
+            
+        else if(inputString.charCodeAt(0)>="a".charCodeAt(0) && inputString.charCodeAt(0)<="z".charCodeAt(0))
+            return "L";
+            
+            else return "I";
+    }
+    
+    
+    var myString = new String();
+    myString = prompt("input the string you want to conculate:","Hello world!");
+    
+    switch(get1stCharType(myString))
+    {
+        case "N":
+            document.write("It is a number!");
+            break;
+            
+        case "U":
+            document.write("It is a upper char!");
+            break;
+            
+        case "L":
+            document.write("It is a low char!");
+            break;
+            
+        case "I":
+            document.write("I have no idea what it is!");
+            break;
+         
+    }
+                    
+</Script>
+</body>
+</html>

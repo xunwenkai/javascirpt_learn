@@ -1,0 +1,30 @@
+<html>
+<head>
+</head>
+
+<body>
+<Script language="JavaScript" type="text/JavaScript">
+
+    function gradeMul(number)
+    {
+        var count;
+        for(count=1;count<=number;count++)
+            document.write(number + " * " + count +" = " + number*count + "<br>");
+    }
+    
+    do
+    {
+        var input = prompt("Please input the a number: ","");
+        if(isNaN(Number(input)))
+        {
+            alert("Number only, please!");
+            continue;
+        }
+        
+        gradeMul(Number(input));
+    }
+    while(Number(input)!=-1);
+    
+</Script>
+</body>
+</html>

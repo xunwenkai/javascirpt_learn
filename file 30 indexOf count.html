@@ -1,0 +1,28 @@
+<html>
+<head>
+</head>
+
+<body>
+<Script language="JavaScript" type="text/JavaScript">
+    
+    var myString = "wrox Welcome to wrox books, the website of wrox is www.wrox.com. Visit wrox website tody, thanks for buying wrox books";
+    var count   =   0;
+    var occurPlace  =   0;
+    
+    while(occurPlace!=-1)
+    {
+        occurPlace  =   myString.indexOf("wrox",occurPlace);
+
+        if(occurPlace!=-1)
+        {
+            count++;
+            occurPlace++;
+        }
+    }
+    
+    document.write("the occur times of wrox in myString is: "   +   count   +   "<br>");
+    
+    
+</Script>
+</body>
+</html>

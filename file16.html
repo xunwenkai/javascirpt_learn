@@ -1,0 +1,28 @@
+<html>
+<head></head>
+
+<body>
+<Script language="JavaScript" type="text/JavaScript">
+
+var firstNum=new Array(14,15,16);
+var count;
+var secondNum=new Array();
+var indexofArray;
+for(count=0;count<=2;count++)
+{
+    secondNum[count]=firstNum[count]+10;
+}
+
+for(count=0;count<=2;count++)
+{
+    document.write(firstNum[count]+"add 10 is: "+ secondNum[count]+"<br>");
+}
+
+for(indexofArray in secondNum)
+{
+    document.write(secondNum[indexofArray]+"<br>");
+}
+
+</Script>
+</body>
+</html>

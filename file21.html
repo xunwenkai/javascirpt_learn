@@ -1,0 +1,35 @@
+<html>
+<head></head>
+<body>
+<Script language="JavaScript" type="text/JavaScript">
+    
+    var ageInput;
+
+    function isAge(age)
+    {
+        var isinputAge = false;
+        if(isNaN(age)==false && age>=0 && age<=200)
+            return ture;
+    }
+    
+    do
+    {
+        ageInput = prompt("Input your age, please","");
+    
+        if(isNaN(ageInput))
+        {
+            alert("age must be a number!");
+        }else if(ageInput==0)
+            {
+                alert("You are a baby!");
+            }else if(ageInput<0||ageInput>200)
+                {
+                    alert("Your must be kidding!");
+                }else
+                    alert("That is a good age!");
+    }
+    while(!isAge(ageInput));
+               
+</Script>
+</body>
+</html>

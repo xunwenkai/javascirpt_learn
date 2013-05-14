@@ -1,0 +1,36 @@
+<html>
+<head>
+</head>
+
+<body>
+<Script language="JavaScript" type="text/JavaScript">
+    
+    var myString = "";
+    var count;
+    
+//    document.write("A".charCodeAt(0)    +   " " +   "Z".charCodeAt(0)+   " " +   "a".charCodeAt(0)+   " " +   "z".charCodeAt(0)+   " " +   "0".charCodeAt(0)+   " " +   "9".charCodeAt(0))
+    
+    for(count=65;count<=90;count++)
+    {
+        myString = myString + String.fromCharCode(count);
+    }
+    
+//    document.write(myString +   "<br>");
+    
+    for(count=48;count<=57;count++)
+    {
+        myString = myString + String.fromCharCode(count);
+    }
+    
+//    document.write(myString +   "<br>");
+    
+    for(count=97;count<=122;count++)
+    {
+        myString = myString + String.fromCharCode(count);
+    }
+    
+    document.write(myString);
+    
+</Script>
+</body>
+</html>
