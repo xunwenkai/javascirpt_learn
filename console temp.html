@@ -1,0 +1,42 @@
+<html>
+<head>
+</head>
+
+<body>
+<Script language="JavaScript" type="text/JavaScript">
+
+//  Test toFixed method of Number type    
+//    var myNumber = new Number(Math.PI);    
+//    alert(myNumber.toFixed(2));
+
+//  Test toFixed method when the decimal less than specified
+//    var myNumber = new Number(2);    
+//    alert(myNumber.toFixed(2));
+
+//  sort a array, then print it as text
+//    var names   =   new Array("jim","kate","lilei","Hanmeimei","Amei");
+//    names   =   names.sort();    
+//    var namesList   =   names.join("<br>");
+//    document.write(namesList);
+
+//  sort the array in alphabetical order then reverse
+    var names   =   new Array("jim","kate","lilei","Hanmeimei","Amei");
+    var order   =   prompt("Specify the order to arrange the list: 1 in order, -1 reverse order","1");
+    
+    if(order == 1)
+    {
+        names   =   names.sort();    
+        var namesList   =   names.join("<br>");
+        document.write(namesList);
+    }else if(order == -1)
+        {
+            names   =   names.sort();
+            names   =   names.reverse();
+            var namesList   =   names.join("<br>");
+            document.write(namesList);
+        }else 
+            alert("It is an invalid input.");
+</Script>
+
+</body>
+</html>

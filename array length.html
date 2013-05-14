@@ -1,0 +1,25 @@
+<html>
+    <head>
+    </head>
+    
+    <body>
+        <Script language="Javascript"   type="text/javascript">
+            //get the last student's name in a length unsure array
+            var studentName =   new Array();
+            studentName[0]  =   "Kevin";
+            studentName[1]  =   "Suzan";
+            studentName[11]  =   "Nikita";
+            
+            document.write("The last student's name is : "  +   studentName[studentName.length-1]);
+            
+            //Traverse studentName
+            var count;
+            for(count in studentName)
+            {
+                document.write(studentName[count] + "<br>");
+                count++;
+            }
+            
+        </Script>
+    </body>
+</html>
