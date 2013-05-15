@@ -1,0 +1,19 @@
+<html>
+    <head>
+    </head>
+    
+    <body>
+        <Script language="Javascript"   type="text/javascript">
+            //define betterFix, when decimal input with less places, add 0
+            function betterFix(decimal,place){
+//                var div = Math.pow(10,place);
+//                decimal = Math.round(decimal*div)/div;
+                return  decimal.toFixed(place);
+            }
+            
+            var getPlace = prompt("Please assign a place you want to fix 2.1: ",0);
+            document.write(betterFix(2.1,getPlace));
+            
+        </Script>
+    </body>
+</html>

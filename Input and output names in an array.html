@@ -1,0 +1,40 @@
+<html>
+    <head>
+    </head>
+    
+    <body>
+        <Script language="Javascript"   type="text/javascript">
+            //get names and save in an array
+            var names =   new Array();
+            var input;
+            var count = 0;
+            
+            /*do{
+            input   =   prompt("Please add a name:","");
+            if(input!="")
+                names[count++]  =   input;
+            
+            }
+            while(input!="");*/
+            
+            while(input!=""){
+                input   =   prompt("Please add a name:","");
+                if(input!="")
+                    names[count++]  =   input;
+            }
+            
+            
+            
+            //sort the array and traverse names
+            names.sort();
+            /*count = 0;
+            for(count in names)
+            {
+                document.write(names[count++] + "<br>");
+            }*/
+            
+            document.write(names.join("<br>"));
+            
+        </Script>
+    </body>
+</html>
