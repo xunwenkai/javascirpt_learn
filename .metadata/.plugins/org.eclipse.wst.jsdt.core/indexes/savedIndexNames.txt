@@ -1,0 +1,6 @@
+INDEX VERSION 1.121+/Users/kevin/Documents/Javascriptѧϰ/javascirpt_learn/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3285387511.index
+337500846.index
+361217345.index
+3515472101.index
+2838288310.index

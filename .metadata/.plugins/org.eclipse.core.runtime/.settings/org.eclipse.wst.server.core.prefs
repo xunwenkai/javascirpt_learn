@@ -1,0 +1,4 @@
+#Wed May 15 00:10:29 CST 2013
+module-start-timeout=300000
+runtimes=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<runtimes>\n  <runtime id\="HTTP Preview" name\="HTTP Preview" runtime-type-id\="org.eclipse.wst.server.preview.runtime" timestamp\="0"/>\n</runtimes>\n
+eclipse.preferences.version=1

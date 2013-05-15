@@ -1,0 +1,15 @@
+<html>
+<head>
+</head>
+
+	<body>
+		<Script language="Javascript"	type="text/javascript">
+			function	lan(){
+				alert("abc");
+			}
+			
+			
+		</Script>
+	</body>
+
+</html>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;javascript_learn/array_length.js&apos;" deleteContents="false" description="Delete resource &apos;javascript_learn/array_length.js&apos;" element1="/javascript_learn/array_length.js" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1368547811715"/>
+</session>
