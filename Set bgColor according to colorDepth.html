@@ -1,0 +1,32 @@
+<html>
+    <head>
+    </head>
+    
+    <body>
+        <Script language="Javascript"   type="text/javascript">
+        switch(window.screen.colorDepth){
+            case 1:
+            case 2:
+            case 4: 
+                document.bgColor = "white";
+                break;
+            case 8:
+                document.bgColor = "blue";
+                break;
+            case 16:
+                document.bgColor = "skyBlue";
+                break;
+            case 24:
+                document.bgColor = "red";
+                break;
+            case 32:
+                document.bgColor = "black";
+                break;
+            default:
+                document.bgColor = "white";                
+        }
+        document.write("Your color depth is: " + window.screen.colorDepth);
+        
+        </Script>
+    </body>
+</html>
