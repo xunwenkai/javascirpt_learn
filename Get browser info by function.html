@@ -1,0 +1,35 @@
+<html>
+    <head>
+    </head>
+    
+    <body>
+        <Script language="Javascript"   type="text/javascript">
+        var browserName = "Unknown";
+        var browserVersion = "0";
+        
+        if(document.layers){
+            browserName = "NN";
+            browserVersion = "4.0";
+
+            if(navigator.securityPolicy){
+                browserVersion = "4.7+";
+            }
+        }else if(document.all){
+            browserName = "IE";
+            browserVersion = "4";
+            }
+            
+        if(window.clipboardData){
+            browserName = "IE";
+            browserVersion = "5+";
+        }else if(window.slidebar){
+            browserName = "Firefox";
+            browserVersion = "1+";
+            }
+ 
+        document.write(browserName + " " + browserVersion);
+        document.write(navigator.userAgent);
+
+       </Script>
+    </body>
+</html>
