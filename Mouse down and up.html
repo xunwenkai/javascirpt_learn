@@ -1,0 +1,24 @@
+<html>
+<head>
+<script language="Javascript" type="text/javascript">
+    function mouse_up(){
+        window.document.myForm.myButton.value = 'mouse is up.';
+    }
+    
+    function mouse_down(){
+        window.document.myForm.myButton.value = 'mouse is down.';
+    }
+    
+    function mouse_over(){
+        window.document.myForm.myButton.value = 'mouse is over.';
+    }
+
+</script>
+</head> 
+
+<body >
+    <form name="myForm">
+    <input type="button" name="myButton" value="mouse is up." onmouseup = "mouse_up()" onmousedown = "mouse_down()" onmouseover = "mouse_over()">
+    </form>
+</body>
+</html>

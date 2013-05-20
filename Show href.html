@@ -1,16 +1,8 @@
 <html>
 <head>
-<Script language="Javascript"   type="text/javascript">    
-    function getHrefs(){
-        var list;
-        for(list in document.links){
-            document.write(document.links[list].href+" ");
-        }
-    }
 
-</Script>
 </head>   
-<body onload="getHrefs()">
+<body>
     <A name="baidu" href="http://www.baidu.com">
         click me 1;
     </A>
@@ -27,6 +19,13 @@
         click me 4;
     </A>
 
+<Script language="Javascript"   type="text/javascript">    
+        var list;
+        for(list in document.links){
+            document.write(document.links[list].href+" ");
+        }
+
+</Script>
 
 </body>
 </html>

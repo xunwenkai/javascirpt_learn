@@ -1,0 +1,27 @@
+<html>
+<head>
+<Script language="Javascript" type="text/javascript">
+    function onload_window(){
+        var formCount = document.forms.length;
+        var count;
+        for(count = 0; count<formCount; count++){
+            alert(document.forms[count].name);
+        }
+    }
+</Script>
+</head>   
+<body onload="onload_window()">
+    <form name="form1">
+    <p> This is form1; </p>
+    </form>
+    
+    <form name="form2">
+    <p> This is form2; </p>
+    </form>
+
+    <form name="form3">
+    <p> This is form3; </p>
+    </form>
+
+</body>
+</html>
