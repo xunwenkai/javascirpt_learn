@@ -1,0 +1,39 @@
+<html>
+<head>
+<script languge="javascript" type="text/javascript">
+	function onFormClick(){
+		if(document.myForm.inputName.value=="" || document.myForm.inputAge.value=="")
+		alert("Please make sure name and age is filled!");
+		if(document.myForm.inputName.value=="")
+			myForm.inputName.focus();
+			else myForm.inputAge.focus();
+	}
+
+	function onAgeBlur(){
+		if(isNaN(document.myForm.inputAge.value))
+		alert("Make sure Age is a number!");
+		myForm.inputAge.focus();
+		myForm.inputAge.select();
+	}
+
+	function onNameChange(){
+		window.status.value="Hi " + myForm.inputName.value;
+	}
+</script>
+</head>
+<body>
+	<form name="myForm">
+		Please input your name and age;
+		<p>
+		Name:
+		<br>
+		<input type="text" name="inputName" size=10 onchange="onNameChange()">
+		<br>
+		Age:
+		<br>
+		<input type="text" name="inputAge" size=3 onblur="onAgeBlur()">
+		<br>
+		<input type="button" name="subForm" value="Submit" onclick="onFormClick()">
+	</form>
+</body>
+</html>

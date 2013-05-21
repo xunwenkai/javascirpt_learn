@@ -1,0 +1,16 @@
+<html>
+<head>
+<Script language="JavaScript" type="text/JavaScript">
+	var clickCount = 0;
+	function buttonClicked(){
+		document.myForm.myButton.value='Button has been clicked for ' + clickCount + ' times';
+		clickCount++;
+	}
+</Script>
+</head>
+<body>
+	<form name="myForm">
+		<input name="myButton" type="button" value="Button has been clicked for 0 times" onclick="buttonClicked()">
+	</form>
+</body>
+</html>

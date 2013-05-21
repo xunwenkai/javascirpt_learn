@@ -1,16 +1,29 @@
 <html>
 <head>
 <script language="Javascript" type="text/javascript">
+    var mouseupcount = 0;
+    var mousedowncount = 0;
+    var mouseovercount = 0;
+    var mouseoutcount = 0;
+
     function mouse_up(){
-        window.document.myForm.myButton.value = 'mouse is up.';
+        mouseupcount++;
+        window.document.myForm.myButton.value = 'mouse up ' + mouseupcount + ' times';
     }
     
     function mouse_down(){
-        window.document.myForm.myButton.value = 'mouse is down.';
+        mousedowncount++;
+        window.document.myForm.myButton.value = 'mouse down ' + mousedowncount + ' times';
     }
     
     function mouse_over(){
-        window.document.myForm.myButton.value = 'mouse is over.';
+        mouseovercount++;
+        window.document.myForm.myButton.value = 'mouse over ' + mouseovercount + ' times';
+    }
+
+    function mouse_out(){
+        mouseoutcount++;
+        window.document.myForm.myButton.value = 'mouse out ' + mouseoutcount + ' times';
     }
 
 </script>
@@ -18,7 +31,7 @@
 
 <body >
     <form name="myForm">
-    <input type="button" name="myButton" value="mouse is up." onmouseup = "mouse_up()" onmousedown = "mouse_down()" onmouseover = "mouse_over()">
+    <input type="button" name="myButton" value="mouse  up 0 times." onmouseup = "mouse_up()" onmousedown = "mouse_down()" onmouseover = "mouse_over()" onmouseout = "mouse_out()">
     </form>
 </body>
 </html>
