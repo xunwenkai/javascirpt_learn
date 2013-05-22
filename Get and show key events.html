@@ -1,0 +1,26 @@
+<html>
+<head>
+<script languge="javascript" type="text/javascript">
+	function displayEvent(Event){
+		var myMessage = document.myForm.myTa2.value;
+		myMessage = myMessage + Event + " ";
+		document.myForm.myTa2.value = myMessage;
+	}
+</script>
+</head>
+<body>
+	<form name="myForm">
+		<textarea name="myTa1" rows=15 cols=40 
+			onchange = "displayEvent('onChange\n')"
+			onkeydown = "displayEvent('onKeyDown\n')"
+			onkeypress = "displayEvent('onKeyPress\n')"
+			onkeyup = "displayEvent('onKeyUp\n\n')"></textarea>
+
+		<textarea name="myTa2" rows=15 cols=40 ></textarea>
+
+		<br>
+
+		<input type="button" name="myButton" value="clear textarea2" onclick="document.myForm.myTa2.value=''">
+	</form>
+</body>
+</html>

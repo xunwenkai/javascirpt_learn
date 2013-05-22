@@ -2,11 +2,13 @@
 <head>
 <script languge="javascript" type="text/javascript">
 	function onFormClick(){
-		if(document.myForm.inputName.value=="" || document.myForm.inputAge.value=="")
+		if(document.myForm.inputName.value=="" || document.myForm.inputAge.value==""){
 		alert("Please make sure name and age is filled!");
 		if(document.myForm.inputName.value=="")
 			myForm.inputName.focus();
 			else myForm.inputAge.focus();
+		}
+		else alert("Thanks for completing the form.");
 	}
 
 	function onAgeBlur(){
